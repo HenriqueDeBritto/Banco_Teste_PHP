@@ -5,7 +5,7 @@ require '../config/config.php';
 $username = $_POST['username'];
 $senha = $_POST['senha'];
 
-$stmt = $pdo->prepare("SELECT * FROM usuarios WHERE username = ?");
+$stmt = $pdo->prepare("SELECT * FROM dados WHERE username = ?");
 $stmt->execute([$username]);
 $user = $stmt->fetch();
 

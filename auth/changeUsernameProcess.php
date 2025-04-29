@@ -5,7 +5,7 @@ require '../config/config.php';
 $new_username = $_POST['new_username'];
 $user_id = $_SESSION['user_id'];
 
-$stmt = $pdo->prepare("UPDATE usuarios SET username = ? WHERE id = ?");
+$stmt = $pdo->prepare("UPDATE dados SET username = ? WHERE id = ?");
 try {
     $stmt->execute([$new_username, $user_id]);
     $_SESSION['username'] = $new_username;

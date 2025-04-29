@@ -7,7 +7,7 @@ if (!isset($_SESSION['user_id'])) {
 include '../includes/header.php';
 ?>
 <h2>Alterar nome de usuário</h2>
-<form action="../auth/change_username_process.php" method="post">
+<form action="../auth/changeUsernameProcess.php" method="post">
     <input type="text" name="new_username" placeholder="Novo nome de usuário" required>
     <button type="submit">Alterar</button>
 </form>
